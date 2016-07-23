@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="30dp"
+              android:weightSum="1">
+
+    <EditText
+        android:id="@+id/addname"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="@string/enter_name">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/addapi"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="@string/enter_api"
+        android:inputType="textMultiLine"
+        android:minLines="5" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/addvarid"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="@string/enter_varid"
+        android:inputType="textMultiLine"
+        android:minLines="5" >
+    </EditText>
+    <Spinner
+        android:id="@+id/addtype"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:entries="@array/arrays"
+        android:prompt="@string/enter_deviceType" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addstate">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_state_on"
+                android:id="@+id/addon"
+                android:checked="true"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_state_off"
+                android:id="@+id/addoff"
+                android:layout_gravity="center_horizontal"/>
+
+        </RadioGroup>
+
+
+
+
+
+    <Button
+        android:id="@+id/add_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/add_device" />
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PiedDiaper</string>
+    <string name="add_device">Add Device</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Delete</string>
+    <string name="empty_list_text">No Device Yet</string>
+    <string name="enter_name">Name</string>
+    <string name="enter_api">API KEY</string>
+    <string name="enter_varid">Variable ID</string>
+    <string name="enter_deviceType">Device Type</string>
+    <string name="enter_state_on">On</string>
+    <string name="enter_state_off">Off</string>
+    <string name="error_message">API_KEY or Variable_ID is wrong, please check! </string>
+</resources>

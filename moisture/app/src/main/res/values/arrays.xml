@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="arrays">
+        <item>Baby Diaper</item>
+        <item>Plant Dry</item>
+        <item>Plant Medium</item>
+        <item>Plant Wet</item>
+    </string-array>
+</resources>
