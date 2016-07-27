@@ -176,6 +176,9 @@ public class DeviceListActivity extends ActionBarActivity {
                     continue;
                 }
                 System.out.println("Moisture: "+device.getMoisture()+"+++++++++++++");
+                if(device.getMoisture() ==0){
+                    continue;
+                }
                 if(DIAPERTYPE.equals(device.getType())){
                     if(device.getMoisture()<DIAPER){
                         alarm(findViewById(R.id.main_view),DIAPERMESSAGE+device.getName());
