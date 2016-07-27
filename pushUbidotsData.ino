@@ -11,8 +11,8 @@
 #define _token "YNbIJdlwtH8s9p4xYNlZTuqhB6bfYY"  // Replace it with your Ubidots token
 #define ID "5795e2f876254249c8ce246a" // Replace it with your Ubidots' variable ID
 
-#define WLAN_SSID       "Triger"  // Your WiFi SSID, cannot be longer than 32 characters!
-#define WLAN_PASS       "nayuqi0406"  // Replace it with your WiFi pass
+#define WLAN_SSID       "Nasao"  // Your WiFi SSID, cannot be longer than 32 characters!
+#define WLAN_PASS       "12345678"  // Replace it with your WiFi pass
 // Security can be OPEN, WEP, WPA, WPAAES, WPA2AES, WPA2TKIP, WPA2
 #define WLAN_SECURITY   "WPA2"
 #define DEBUG_UBIDOTS
@@ -128,11 +128,7 @@ bool sendAll(){
     _client.write(REMOTE_PORT);
     _client.write(",");
     _client.write(",1\r\n");
-    if(strstr(readData(2000),"[CONNECT 0]")==NULL){
-#ifdef   DEBUG_UBIDOTS
-        Serial.println(F("Error with AT+CSQ"));
-#endif
-      }
+
       sprintf(vals,"%d",strlen(data));
       
     _client.write("POST /api/v1.6/collections/values/?force=true HTTP/1.1");
